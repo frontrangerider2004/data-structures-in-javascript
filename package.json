@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run lint && npm run test && npm run docs",
-    "lint": "eslint --fix src/",
+    "lint": "eslint --fix src/ test/",
     "test": "jest --config=jest.config.js",
     "nodemon": "nodemon",
     "docs": "jsdoc -c ./jsdoc.json"

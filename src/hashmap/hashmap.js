@@ -8,6 +8,7 @@ class HashMap {
    * Create a new instance
    */
   constructor() {
+    // TODO: apply a scaling factor
     this._table = [];
   }
 
@@ -22,11 +23,11 @@ class HashMap {
   __hash(key) {
     let hash = 0;
 
-    if (this.length === 0) return hash;
+    if (key.length === 0) return hash;
 
-    for (const char of key) {
-      const code = this.charCodeAt(char);
-      hash = ((hash << 5) - hash) + code;
+    for (let i = 0; i < key.length; i++) {
+      const char = key.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
       hash |= 0; // Convert to 32bit integer
     }
 
