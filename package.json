@@ -1,0 +1,16 @@
+{
+  "name": "data-structures-in-javascript",
+  "version": "1.0.0",
+  "description": "JavaScript implementations of basic data structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config=jest.config.js",
+    "nodemon": "nodemon"
+  },
+  "author": "frontrangerider",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.0",
+    "nodemon": "^2.0.15"
+  }
+}
