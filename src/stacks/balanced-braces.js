@@ -9,35 +9,36 @@ const Stack = require('./stack');
 function balancedBraces(string) {
   const stack = new Stack();
 
-  for (let char of string) {
+  for (const char of string) {
     if (char === '[' || char === '{' || char === '(') {
       stack.push(char);
-      console.log('Added to stack', stack.peek())
     } else if (char === ']' || char === '}' || char === ')') {
       if (char === ']') {
         if (stack.peek() === '[') {
-          stack.pop()
+          stack.pop();
         } else {
-          throw new Error('[balancedBraces] string is missing [')
+          throw new Error('[balancedBraces] string is missing [');
         }
       } else if (char === '}') {
         if (stack.peek() === '{') {
-          stack.pop()
+          stack.pop();
         } else {
-          throw new Error('[balancedBraces] string is missing {')
+          throw new Error('[balancedBraces] string is missing {');
         }
       } else if (char === ')') {
         if (stack.peek() === '(') {
-          stack.pop()
+          stack.pop();
         } else {
-          throw new Error('[balancedBraces] string is missing \(')
+          throw new Error('[balancedBraces] string is missing \(');
         }
       }
     }
   }
-  
+
   if (!stack.isEmpty()) {
-    throw new Error(`[balancedBraces] string is missing corresponding ${stack.peek()}`);
+    throw new Error(
+        `[balancedBraces] string is missing corresponding ${stack.peek()}`,
+    );
   }
 }
 
