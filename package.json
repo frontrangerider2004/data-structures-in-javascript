@@ -4,13 +4,21 @@
   "description": "JavaScript implementations of basic data structures",
   "main": "index.js",
   "scripts": {
+    "build": "npm run lint && npm run test && npm run docs",
+    "lint": "eslint",
     "test": "jest --config=jest.config.js",
-    "nodemon": "nodemon"
+    "nodemon": "nodemon",
+    "docs": "jsdoc -c ./jsdoc.json"
   },
   "author": "frontrangerider",
   "license": "ISC",
   "devDependencies": {
+    "clean-jsdoc-theme": "^3.3.1",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
     "jest": "^27.5.0",
+    "jsdoc": "^3.6.10",
     "nodemon": "^2.0.15"
   }
 }
