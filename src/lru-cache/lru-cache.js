@@ -48,6 +48,7 @@ class LruCache {
    */
   get(key) {
     // TODO:
+    return this._map.get(key);
   }
 }
 
