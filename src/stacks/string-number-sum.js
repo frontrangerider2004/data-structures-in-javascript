@@ -1,9 +1,8 @@
 /**
  * Computes the sum of two large numbers represented as string
- * @throws {TypeError} if either A or B are not strings
  * @param {string} a large number as a string
  * @param {string} b large number as a string
- * @return {string} a and b added together
+ * @return {string} the sum of a and b
  *
  * @example
  * '1' + '2' = '3'
