@@ -83,7 +83,7 @@
   <body>
 
     <nav class="navbar" id="navbar">
-      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="7547773" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion collapsed child" id=4133340><div class="accordion-heading child"><a href="HashMap.html">HashMap</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="HashMap.html#__hash">__hash</a></li><li data-type='method'><a href="HashMap.html#get">get</a></li><li data-type='method'><a href="HashMap.html#set">set</a></li></ul></li><li class="accordion collapsed child" id=1637905><div class="accordion-heading child"><a href="Stack.html">Stack</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Stack.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="Stack.html#peek">peek</a></li></ul></li></ul> </div><div class="accordion collapsed" id="5725585" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#balancedBraces">balancedBraces</a></li></ul> </div>
+      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="2326764" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion collapsed child" id=9328192><div class="accordion-heading child"><a href="HashMap.html">HashMap</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="HashMap.html#__hash">__hash</a></li><li data-type='method'><a href="HashMap.html#get">get</a></li><li data-type='method'><a href="HashMap.html#set">set</a></li></ul></li><li class="accordion collapsed child" id=5364342><div class="accordion-heading child"><a href="LruCache.html">LruCache</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="LruCache.html#get">get</a></li><li data-type='method'><a href="LruCache.html#set">set</a></li></ul></li><li class="accordion collapsed child" id=8019512><div class="accordion-heading child"><a href="Stack.html">Stack</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Stack.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="Stack.html#peek">peek</a></li></ul></li></ul> </div><div class="accordion collapsed" id="9859331" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#balancedBraces">balancedBraces</a></li><li class="accordion-list" id=""><a href="global.html#memoizer">memoizer</a></li><li class="accordion-list" id=""><a href="global.html#stringBuilder">stringBuilder</a></li><li class="accordion-list" id=""><a href="global.html#stringConcat">stringConcat</a></li><li class="accordion-list" id=""><a href="global.html#stringNumberSum">stringNumberSum</a></li></ul> </div>
       
 
     </nav>
@@ -115,22 +115,23 @@
 class Stack extends Array {
   /**
    * Get a reference to the item at the tail of the stack (the last item)
-   * @returns {*} item
+   * @return {*} item
    */
   peek() {
-    return this.length > 0 ? this[this.length - 1] : undefined
+    return this.length > 0 ? this[this.length - 1] : undefined;
   }
 
   /**
    * Computes if the stack is emtpy
-   * @returns {boolean} true if the stack has not items
+   * @return {boolean} true if the stack has not items
    */
   isEmpty() {
     return this.length === 0;
   }
 }
 
-module.exports = Stack;</code></pre>
+module.exports = Stack;
+</code></pre>
         </article>
     </section>
 
@@ -155,7 +156,7 @@ module.exports = Stack;</code></pre>
       <script src="scripts/search.js"></script>
       <script src="scripts/third-party/fuse.js"></script>
       <script>
-        var list = [{"title":"HashMap","link":"<a href=\"HashMap.html\">HashMap</a>"},{"title":"HashMap#__hash","link":"<a href=\"HashMap.html#__hash\">HashMap &rtrif; __hash</a>"},{"title":"HashMap#get","link":"<a href=\"HashMap.html#get\">HashMap &rtrif; get</a>"},{"title":"HashMap#set","link":"<a href=\"HashMap.html#set\">HashMap &rtrif; set</a>"},{"title":"Stack","link":"<a href=\"Stack.html\">Stack</a>"},{"title":"Stack#isEmpty","link":"<a href=\"Stack.html#isEmpty\">Stack &rtrif; isEmpty</a>"},{"title":"Stack#peek","link":"<a href=\"Stack.html#peek\">Stack &rtrif; peek</a>"},{"title":"balancedBraces","link":"<a href=\"global.html#balancedBraces\">balancedBraces</a>"}];
+        var list = [{"title":"HashMap","link":"<a href=\"HashMap.html\">HashMap</a>"},{"title":"HashMap#__hash","link":"<a href=\"HashMap.html#__hash\">HashMap &rtrif; __hash</a>"},{"title":"HashMap#get","link":"<a href=\"HashMap.html#get\">HashMap &rtrif; get</a>"},{"title":"HashMap#set","link":"<a href=\"HashMap.html#set\">HashMap &rtrif; set</a>"},{"title":"LruCache","link":"<a href=\"LruCache.html\">LruCache</a>"},{"title":"LruCache#get","link":"<a href=\"LruCache.html#get\">LruCache &rtrif; get</a>"},{"title":"LruCache#set","link":"<a href=\"LruCache.html#set\">LruCache &rtrif; set</a>"},{"title":"Stack","link":"<a href=\"Stack.html\">Stack</a>"},{"title":"Stack#isEmpty","link":"<a href=\"Stack.html#isEmpty\">Stack &rtrif; isEmpty</a>"},{"title":"Stack#peek","link":"<a href=\"Stack.html#peek\">Stack &rtrif; peek</a>"},{"title":"balancedBraces","link":"<a href=\"global.html#balancedBraces\">balancedBraces</a>"},{"title":"memoizer","link":"<a href=\"global.html#memoizer\">memoizer</a>"},{"title":"stringBuilder","link":"<a href=\"global.html#stringBuilder\">stringBuilder</a>"},{"title":"stringConcat","link":"<a href=\"global.html#stringConcat\">stringConcat</a>"},{"title":"stringNumberSum","link":"<a href=\"global.html#stringNumberSum\">stringNumberSum</a>"}];
         var options = 
           setupSearch(list, options)
       </script>
